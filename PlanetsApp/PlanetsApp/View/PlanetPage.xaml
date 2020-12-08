@@ -4,10 +4,10 @@
              x:Class="PlanetsApp.View.PlanetPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Název planety" TextColor="Red"/>
-            <Entry Placeholder="Název planety" HorizontalOptions="CenterAndExpand" Text="{Binding Name}"/>
-            <Label Text="Pořadí od Slunce" TextColor="Red"/>
-            <Entry Placeholder="Pořadí od Slunce" HorizontalOptions="CenterAndExpand" Text="{Binding SolarSystemPosition}"/>
+            <Label Text="Název" TextColor="Red"/>
+            <Entry Placeholder="Název" HorizontalOptions="CenterAndExpand" Text="{Binding Name}"/>
+            <Label Text="Typ objektu" TextColor="Red"/>
+            <Entry Placeholder="Typ objektu" HorizontalOptions="CenterAndExpand" Text="{Binding Type}"/>
             <Label Text="Průměrná teplota {K}" TextColor="Red"/>
             <Entry Placeholder="Průměrná teplota" HorizontalOptions="CenterAndExpand" Text="{Binding AverageTemperature}"/>
 

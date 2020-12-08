@@ -7,19 +7,21 @@ namespace PlanetsApp.Models
 {
     public class OurPlanets
     {
-        public ObservableCollection<Planet> AllPlanets { get; set; }
+        public ObservableCollection<Planet> AllObjects { get; set; }
 
         public OurPlanets()
         {
-            AllPlanets = new ObservableCollection<Planet>();
-            AllPlanets.Add(new Planet { Name = "Mercury", SolarSystemPosition = 1, AverageTemperature = 440 });
-            AllPlanets.Add(new Planet { Name = "Venus", SolarSystemPosition = 2, AverageTemperature = 737 });
-            AllPlanets.Add(new Planet { Name = "Earth", SolarSystemPosition = 3, AverageTemperature = 287 });
-            AllPlanets.Add(new Planet { Name = "Mars", SolarSystemPosition = 4, AverageTemperature = 210 });
-            AllPlanets.Add(new Planet { Name = "Jupiter", SolarSystemPosition = 5, AverageTemperature = -121 });
-            AllPlanets.Add(new Planet { Name = "Saturn", SolarSystemPosition = 6, AverageTemperature = 0 });
-            AllPlanets.Add(new Planet { Name = "Uranus", SolarSystemPosition = 7, AverageTemperature = 68 });
-            AllPlanets.Add(new Planet { Name = "Neptune", SolarSystemPosition = 8, AverageTemperature = 53 });
+            AllObjects = new ObservableCollection<Planet>();
+            AllObjects.Add(new Planet { Name = "Mercury", Type = "Planeta", AverageTemperature = 440 });
+            AllObjects.Add(new Planet { Name = "Venus", Type = "Planeta", AverageTemperature = 737 });
+            AllObjects.Add(new Planet { Name = "Earth", Type = "Planeta", AverageTemperature = 287 });
+            AllObjects.Add(new Planet { Name = "Mars", Type = "Planeta", AverageTemperature = 210 });
+            AllObjects.Add(new Planet { Name = "Jupiter", Type = "Planeta", AverageTemperature = -121 });
+            AllObjects.Add(new Planet { Name = "Saturn", Type = "Planeta", AverageTemperature = 0 });
+            AllObjects.Add(new Planet { Name = "Uranus", Type = "Planeta", AverageTemperature = 68 });
+            AllObjects.Add(new Planet { Name = "Neptune", Type = "Planeta", AverageTemperature = 53 });
+            AllObjects.Add(new Planet { Name = "Sun", Type = "Star", AverageTemperature = 1000000 });
+            AllObjects.Add(new Planet { Name = "Moon", Type = "Druzice", AverageTemperature = 53 });
         }
     }
 }

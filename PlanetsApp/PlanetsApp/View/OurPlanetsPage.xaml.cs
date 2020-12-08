@@ -27,7 +27,7 @@ namespace PlanetsApp.View
             if (e.Item == null)
                 return;
 
-            Page p = new PlanetPage((((ListView)sender).SelectedItem) as Planet, (BindingContext as OurPlanets).AllPlanets);
+            Page p = new PlanetPage((((ListView)sender).SelectedItem) as Planet, (BindingContext as OurPlanets).AllObjects);
             NavigationPage np = new NavigationPage(p);
             await Application.Current.MainPage.Navigation.PushAsync(np);
 

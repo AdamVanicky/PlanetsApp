@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlanetsApp.View.OurPlanetsPage">
     <ListView x:Name="MyListView"
-            ItemsSource="{Binding AllPlanets}"
+            ItemsSource="{Binding AllObjects}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
 
@@ -13,7 +13,7 @@
                 <ViewCell>
                     <StackLayout>
                         <Label Text="{Binding Name}" TextColor="Red"/>
-                        <Label Text="{Binding SolarSystemPosition}" TextColor="Red"/>
+                        <Label Text="{Binding Type}" TextColor="Red"/>
                         <Label Text="{Binding AverageTemperature}" TextColor="Red"/>
                     </StackLayout>
                 </ViewCell>

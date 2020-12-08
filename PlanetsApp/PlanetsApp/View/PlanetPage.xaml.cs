@@ -21,7 +21,7 @@ namespace PlanetsApp.View
         public PageViewModel(Planet p)
         {
             Name = p.Name;
-            SolarSystemPosition = p.SolarSystemPosition;
+            Type = p.Type;
             AverageTemperature = p.AverageTemperature;
         }
 
@@ -36,14 +36,14 @@ namespace PlanetsApp.View
             }
         }
 
-        public int _SolarSystemPosition;
-        public int SolarSystemPosition
+        public string _Type;
+        public string Type
         {
-            get { return _SolarSystemPosition; }
+            get { return _Type; }
             set
             {
-                _SolarSystemPosition = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SolarSystemPosition"));
+                _Type = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Type"));
             }
         }
 
@@ -63,7 +63,7 @@ namespace PlanetsApp.View
             Planet p = new Planet
             {
                 Name = this.Name,
-            SolarSystemPosition = this.SolarSystemPosition,
+            Type = this.Type,
             AverageTemperature = this.AverageTemperature
         };
             return p;

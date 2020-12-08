@@ -10,6 +10,6 @@ namespace PlanetsApp.Models
 
         public int AverageTemperature { get; set; }
 
-        public int SolarSystemPosition { get; set; }
+        public string Type { get; set; }
     }
 }
