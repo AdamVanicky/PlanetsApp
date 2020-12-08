@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanetsApp.View.PlanetPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Název planety" TextColor="Red"/>
+            <Entry Placeholder="Název planety" HorizontalOptions="CenterAndExpand" Text="{Binding Name}"/>
+            <Label Text="Pořadí od Slunce" TextColor="Red"/>
+            <Entry Placeholder="Pořadí od Slunce" HorizontalOptions="CenterAndExpand" Text="{Binding SolarSystemPosition}"/>
+            <Label Text="Průměrná teplota {K}" TextColor="Red"/>
+            <Entry Placeholder="Průměrná teplota" HorizontalOptions="CenterAndExpand" Text="{Binding AverageTemperature}"/>
+
+            <Button Text="Uložit" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
